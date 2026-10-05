@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Quantico;
+    src: url('../fonts/quantico/Quantico-Regular.woff2')
+}
+
+@font-face {
+    font-family: Quantico;
+    font-weight: bold;
+    src: url('../fonts/quantico/Quantico-Bold.woff2')
+}
+
+@font-face {
+    font-family: Quantico;
+    font-style: italic;
+    src: url('../fonts/quantico/Quantico-Italic.woff2')
+}
+
+@font-face {
+    font-family: Quantico;
+    font-style: italic;
+    font-weight: bold;
+    src: url('../fonts/quantico/Quantico-BoldItalic.woff2');
+}
+
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url('../fonts/UbuntuMono/UbuntuMono-Regular.woff2');
+}
+
+@font-face {
+    font-family: "Ubuntu Mono";
+    font-style: italic;
+    src: url('../fonts/UbuntuMono/UbuntuMono-Italic.woff2');
+}
+
+@font-face {
+    font-family: "Ubuntu Mono";
+    font-weight: bold;
+    src: url('../fonts/UbuntuMono/UbuntuMono-Bold.woff2');
+}
+
+@font-face {
+    font-family: "Ubuntu Mono";
+    font-style: italic;
+    font-weight: bold;
+    src: url('../fonts/UbuntuMono/UbuntuMono-BoldItalic.woff2');
+}
+ 

@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4d6cc;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.header {
+    animation: bgChange 10s linear 2s infinite alternate both;
+    background-color: #32373b;
+    padding: 16px;
+}
+
+.page__title {
+    color: #f4d6cc;
+    font-family: Quantico, Arial, sans-serif;
+    font-size: 3rem; 
+    margin: 0;
+    text-align: center;
+}
+
+.nav {
+    background-color: cornflowerblue;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0px;
+}
+
+.main {
+    padding: 16px;
+    position: relative;
+}
+
+.introduction {
+    font-family: Quantico, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.description {
+    font-family: Quantico, Arial, sans-serif;
+    font-style: italic;
+}
+
+.bold__italic {
+    font-weight: bold;
+}
+
+.ubuntu {
+    font-family: "Ubuntu Mono"
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.position {
+    background-color: #4a5859;
+    padding: 24px;
+    position: relative;
+    min-height: 400px;
+    
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+}
+
+.position:hover .absolute {
+    left: 0;
+    bottom: calc(100% - 100px)
+}
+
+.relative {
+    background-color: #f4b860;
+    display: none;
+    height: 150px;
+    position: relative;
+    left: 30px;
+    top: 50px;
+}
+
+.absolute {
+    background-color: #c83e4d;
+    height: 100px;
+    position: absolute;
+    width: 100px;
+    left: calc(100% - 100px);
+    bottom: 0;
+    transition: all linear 1s;
+    z-index: 10;
+}
+
+.fixed {
+    background: #a4482a;
+    position: fixed;
+    padding: 16px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+}
+
+.menu-container  {
+    position: relative;
+}
+
+.menu-trigger {
+    background-color:crimson;
+    color: white;
+    padding: 8px;
+    height: 50px;
+    width: 50px;
+}
+
+.menu-trigger:hover + .menu-target {
+    left: 0;
+}
+
+.menu-target {
+    background-color:darkgoldenrod;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 20;
+    left: -400px;
+    transition: left 0.3s;
+}
+
+@keyframes bgChange {
+    0% {background-color: blue;}
+    30% {background-color: red;}
+    70% {background-color: green;}
+    100% {background-color: yellow;}
+}
+
+@media screen and (min-width: 768px) {
+    .page__title {
+        font-size: 6rem;
+        padding: 48px;
+    }
+
+    .main {
+        font-size: 1.5rem;
+    }
+}
